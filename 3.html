@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>testPage</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+  <div>
+  Здесь должна быть кнопка
+	<button id="secretButton" type="button" onclick="myFunction()">кнопочка</button>
+	<script>
+        
+        window.onload = function() {
+           
+  var now = new Date();
+//alert(Math.floor( now.getSeconds()/12) );
+    btn=document.getElementById("secretButton");
+             if(Math.floor( now.getSeconds()/12)==2){
+    btn.style.display="block";
+        }
+};
+        
+function myFunction() {
+    btn=document.getElementById("secretButton");
+    btn.style.display="none";
+}
+</script>
+
+	</div>
+  </body>
+</html>
